@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost/salvar" method="get">
+        <label for="campo-modelo">Modelo</label>
+        <input type="text" name="modelo" id="campo-modelo">
+        <br/>
+        
+        <input type="radio" id="campo-cor-azul" name="cor" value="azul">
+        <label for="campo-cor-azul">Azul</label>
+        
+        <input type="radio" id="campo-cor-vermelho" name="cor" value="vermelho">
+        <label for="campo-cor-vermelho">Vermelho</label>
+        
+        <input type="radio" id="campo-cor-cinza" name="cor" value="cinza">
+        <label for="campo-cor-cinza">Cinza</label>
+
+        <br/>
+        <label for="campo-tipo">Tipo</label>
+        <select name="tipo" id="campo-tipo">
+            <option value="hatch">Hatch</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+        </select>
+        <br/>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
+
+
+<!-- 
+    Ex.1 : Criar a página aluno.html com os seguintes campos: 
+        nome 
+        nota1 
+        nota2 
+        nota3
+        Enviar os dados utilizando form: 
+            action "https://localhost:5001/alunos/cadastrar" e método post
+    Ex. 2: Criar a página paciente.html com os seguintes campos: 
+        nome
+        cpf
+        idade
+        altura
+        peso
+        Enviar os dados utilizando form para "/paciente/cadastrar" e método post
+    Ex. 3: Criar a página cadastro.html com os seguintes campos:
+        nome
+        cpf
+        
+-->

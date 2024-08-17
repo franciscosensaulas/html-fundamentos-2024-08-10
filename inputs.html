@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo de inputs</title>
+    </head>
+    <body>
+        <h1>Exemplo de inputs</h1>
+
+        <h2>Agendamento de consulta do Paciente</h2>
+        <form method="get" action="http://localhost:5000/salvar.php">
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" name="nome">
+
+            <br/> <!-- Não utilizar gambiarra -->
+            <label for="campo-idade">Idade</label>
+            <input type="number" min="0" max="150" id="campo-idade" name="idade">
+
+            <br/>
+            <label for="campo-peso">Peso</label>
+            <input type="number" min="0" step="0.01" id="campo-peso" name="peso">
+
+            <br/>
+            <label for="campo-data-nascimento">Data de Nascimento</label>
+            <input type="date" id="campo-data-nascimento" name="data-nascimento">
+
+            <br/>
+            <label for="campo-email">E-mail</label>
+            <input type="email" id="campo-email" name="email">
+
+            <br/>
+            <label for="campo-hora-nascimento">Hora de Nascimento</label>
+            <input type="time" id="campo-hora-nascimento" name="hora-nascimento">
+
+            <br/>
+            <label for="campo-data-hora-agendamento">Data de Agendamento</label>
+            <input type="datetime-local" id="campo-data-hora-agendamento" name="data-hora-agendamento">
+
+            <button type="submit">Salvar</button>
+        </form>
+
+        <br>
+        <br>
+        <h2>Login</h2>
+        <form action="http://localhost:5001/login" method="post">
+            <label for="campo-username">Username</label>
+            <br/>
+            <input type="text" id="campo-username" name="username" autocomplete="off">
+            <br/>
+            <label for="campo-senha">Senha</label>
+            <br/>
+            <input type="password" id="campo-senha" name="senha">
+            <br/>
+            <input type="checkbox" id="campo-manter-logado" name="manter-logado">
+            <label for="campo-manter-logado">Manter logado</label>
+            <br/>
+            <button >Entrar</button>
+        </form>
+    </body>
+</html>
