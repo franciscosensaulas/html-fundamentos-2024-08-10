@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- enctype: é o formato de codificação que será enviado os dados do formulário 
+        application/x-www-form-urlencoded: padrão, enviado no formato de chave valor
+        multipart/form-data: é utilizado para formulários com upload de arquivos
+    -->
+    <form action="/carros/cadastrar" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="campo-marca">Marca</label>
+            <select name="marca" id="campo-marca">
+                <option disabled selected>Selecione uma marca</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Ford">Ford</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="campo-cor">Cor</label>
+            <input name="cor" id="campo-cor" list="cores">
+        </div>
+
+        <div>
+            <label for="campo-modelo">Modelo</label>
+            <input type="text" name="modelo" id="campo-modelo">
+        </div>
+
+        <div>
+            <label for="campo-ano">Ano</label>
+            <input type="number" name="ano" id="campo-ano">
+        </div>
+
+        <div>
+            <label for="campo-quilometragem">Quilometragem</label>
+            <input type="number" name="quilometragem" id="campo-quilometragem">
+        </div>
+
+        <div>
+            <label for="campo-preco">Preço</label>
+            <input type="number" name="preco" id="campo-preco">
+        </div>
+
+        <div>
+
+            <input type="radio" id="campo-estado-novo" name="estado" value="novo">
+            <label for="campo-estado-novo">Novo</label>
+            <input type="radio" id="campo-estado-usado" name="estado" value="usado">
+            <label for="campo-estado-usado">Usado</label>
+        </div>
+
+        <div>
+            <label for="campo-arquivo">Arquivo</label>
+            <input type="file" name="arquivo" id="campo-arquivo" accept="image/jpeg, image/png">
+        </div>
+
+        <button type="submit">
+            <i class="fa-solid fa-floppy-disk"></i> Cadastrar
+        </button>
+    </form>
+
+    <script src="https://kit.fontawesome.com/96a844a27d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--
+    Ex. 1: Criar uma tela de cadastro de jogador de futebol com os seguintes campos:
+        - nome
+        - sobrenome
+        - posição
+        - altura
+        - peso
+        - data nascimento
+        - salário
+        - foto
+        - time (select)
+        Ter link para acessar a tela de listagem de jogador
+    Ex. 2: Criar uma tela de listagem dos jogadores com os seguintes filtros:
+        - time
+        - posição
+        - min salário
+        - max salário
+        Ter link para acessar a tela de cadastro de jogador
+        <a href="index.html">Exemplo 01</a>
+
+-->
