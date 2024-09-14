@@ -1,0 +1,91 @@
+span {
+    /* display: inline-block;
+    width: 100%; */
+}
+
+.padding-superior {
+    background-color: blue;
+    padding-top: 5px;
+}
+
+.padding-direito {
+    background-color: red;
+    padding-right: 10px;
+}
+
+.padding-inferior {
+    background-color: black;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.padding-esquerdo {
+    background-color: greenyellow;
+    padding-left: 20px;
+}
+
+.botao-clique-aqui {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/*
+Hover é um evento que ocorre quando o passa o mouse por cima do componente
+*/
+.botao-clique-aqui:hover{
+    background-color: #03a9e0;
+    cursor: pointer;
+}
+
+.campo-texto {
+    width: 100%;
+    /* padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px; */
+    /* padding: topo direita inferior esquerda*/
+    padding: 8px 8px 8px 8px;
+    box-sizing: border-box; /* assegura que o padding não aumente o tamanho do elemento */
+}
+
+.card {
+    margin-top: 10px;
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.tabela-estilizada {
+    width: 100%;
+    border-collapse: collapse; /* Remover o espaçamento entre as bordas das células */
+    font-family: Arial, sans-serif;
+    margin: 20px 0px;
+}
+
+.tabela-estilizada thead tr {
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+    font-weight: bold; /* Deixar em negrito */
+}
+
+.tabela-estilizada th,
+.tabela-estilizada td{
+    padding: 12px 15px; /* cima+baixo esquerda+direita */
+    border: 1px solid #ddd;
+}
+/* Estlizar as linhas pares */
+.tabela-estilizada tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+.tabela-estilizada tbody tr:hover{
+    background-color: #f1f1f159;
+    cursor: pointer;
+}

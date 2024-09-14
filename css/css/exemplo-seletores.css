@@ -1,0 +1,23 @@
+/* Seletor é a tag div, aplicará essa estilização para todas as divs*/
+div {
+    background-color: yellow;
+    height: 70px;
+}
+
+/* Seletor de id, aplicará essa estilização para o elemento com o id vermelho */
+#vermelho {
+    background-color: darkred;
+}
+
+#preto {
+    background-color: black;
+    color: white;
+}
+
+.verde{
+    background-color: green;
+}
+
+.texto-centralizado { 
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+/* Seletor de primeira ocorrência da tag p */
+p:first-child {
+    background-color: aqua;
+}
+
+/* Seletor da segunda ocorrência da tag p */
+p:nth-child(2) {
+    background-color: brown;
+}
+
+/* Alterar o fundo dos itens ímpares da lista */
+li:nth-child(odd) {
+    /* li:nth-child(1), */
+    /* li:nth-child(3), */
+    /* li:nth-child(5){ */
+    background-color: darkgray;
+}
+
+/* Alterar o fundo dos itens pares da lista */
+li:nth-child(even) {
+    /* li:nth-child(2), */
+    /* li:nth-child(4), */
+    /* li:nth-child(6){ */
+    background-color: wheat;
+}
+/* Alterar o fundo do último item da lista */
+li:last-child{
+    background-color: salmon;
+}

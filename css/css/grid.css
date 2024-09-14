@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Define as margens de esquerda e direita como automáticas*/
+}
+
+.barra-superior {
+    background-color: #009879;
+    color: #fff;
+    padding: 10px 0px;
+    position: relative;
+}
+
+.barra-superior .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-superior h1 {
+    font-size: 1.5em;
+}
+
+.icone-carrinho{
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icone-carrinho .contador-carrinho {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+}
+
+.toggle-carrinho {
+    display: none;
+}
+
+.carrinho-itens {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: none; /* Ocultar */
+    z-index: 1000;
+}
+
+.carrinho-itens h2 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.carrinho-itens ul {
+    list-style: none;
+}
+
+.carrinho-itens ul li {
+    margin-bottom: 10px;
+}
+
+/* Mostrar o carrinho quando o checkbox estiver marcado */
+.toggle-carrinho:checked ~ .carrinho-itens {
+    display: block;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #333;
+}
+
+.grade-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* https://dontpad.com/franciscosensaulas/css */
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    /* Três itens por linha*/
+    padding: 20px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.produto h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.produto p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #009879;
+    font-weight: bold;
+}
+
+.produto button {
+    padding: 10px 15px;
+    background: #009879;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background: #007961;
+}

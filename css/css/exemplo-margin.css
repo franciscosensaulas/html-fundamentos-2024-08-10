@@ -1,0 +1,30 @@
+/* Reset de CSS */
+body {
+    margin: 0px;
+}
+
+/* Seletor que filtra a div que contém a classe campo-nome */
+div.campo-nome {
+    background-color: aqua;
+}
+
+div.campo-sobrenome {
+    background-color: slateblue;
+}
+
+/* Aplicar a margin para as divs que contenham a classe campo-nome e campo-sobrenome */
+div.campo-nome,
+div.campo-sobrenome {
+    margin-top: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*
+display: block faz com que o elemento ocupe a linha inteira
+display: inline faz com que o elemento ocupe o menor espaço possível, permitindo outras tags ao seu lado.
+*/
+input {
+    width: 100%;
+    display: block;
+}
