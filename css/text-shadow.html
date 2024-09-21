@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/text-shadow.css">
+</head>
+<body>
+    <h1>Exemplos de text-shadow</h1>
+
+    <p>A propriedade <code>text-shadow: 2px 2px 4px;</code> define uma sombra ao redor do texto, e é composta por quatro valores que controlam a aparência da sombra. Aqui está a explicação de cada parte:</p>
+
+    <h2>2px (horizontal offset)</h2>
+    <p>Este valor define o deslocamento da sombra no eixo horizontal (esquerda ou direita).</p>
+    <ul>
+        <li>Se for positivo, a sombra será deslocada para a <strong>direita</strong> do texto.</li>
+        <li>Se for negativo, a sombra será deslocada para a <strong>esquerda</strong> do texto.</li>
+    </ul>
+
+    <h2>2px (vertical offset)</h2>
+    <p>Este valor define o deslocamento da sombra no eixo vertical (para cima ou para baixo).</p>
+    <ul>
+        <li>Se for positivo, a sombra será deslocada para <strong>baixo</strong> do texto.</li>
+        <li>Se for negativo, a sombra será deslocada para <strong>cima</strong> do texto.</li>
+    </ul>
+
+    <h2>4px (blur radius - raio de desfoque)</h2>
+    <p>Este valor define o quanto a sombra será "borrada" ou "desfocada".</p>
+    <ul>
+        <li>Se for <strong>0</strong>, a sombra não terá desfoque, ou seja, será uma linha nítida.</li>
+        <li>Quanto maior o valor, mais desfocada ou suave será a sombra. No exemplo, com <strong>4px</strong>, a sombra terá um desfoque suave.</li>
+    </ul>
+
+    <h2>Cor (opcional)</h2>
+    <p>A cor da sombra pode ser definida após o valor de desfoque, utilizando qualquer valor de cor válido em CSS, como <code>rgba(0, 0, 0, 0.5)</code> para uma sombra preta semitransparente ou <code>red</code> para uma sombra vermelha. Se não for especificada, o navegador usará a cor padrão, geralmente preto.</p>
+
+    <h2>Exemplos</h2>
+    <div class="sombra-leve">
+        <h2>Sombra leve</h2>
+        <p>Este texto tem uma sobra leve e suave. Usamos <code>text-shado: 2px 2px 4px rgba(0,0,0,0.3)</code></p>
+    </div>
+
+    <div class="sombra-pesada">
+        <h2>Sombra pesada</h2>
+        <p>Este texto tem uma sobra mais forte e definida.</p>
+    </div>
+
+    <div class="sombra-colorida">
+        <h2>Sombra Colorida</h2>
+        <p>Este texto tem uma sobra vermelha transparente.</p>
+    </div>
+
+    <div class="sombra-multipla">
+        <h2>Múltiplas sombras</h2>
+        <p>Este texto tem múltiplas sombras.</p>
+    </div>
+    <!-- https://dontpad.com/franciscosensaulas/css -->
+</body>
+</html>

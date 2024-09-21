@@ -1,0 +1,24 @@
+div {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.sombra-leve {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #e0f8fa;
+}
+
+.sombra-pesada {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    background-color: #ffe0b2;
+}
+
+.sombra-colorida {
+    text-shadow: 3px 3px 5px rgba(9, 241, 125, 0.5);
+    background-color: #c8e6c9;
+}
+
+.sombra-multipla {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 255, 255, 0.5);
+    background-color: #d1c4e9;
+}

@@ -1,0 +1,53 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box-none {
+    outline: 2px none;
+}
+
+.box-dotted {
+    outline: 2px dotted red;
+}
+
+.box-dashed {
+    outline: 2px dashed green;
+}
+
+.box-solid {
+    outline: 2px solid blue;
+}
+
+.box-double {
+    outline: 4px double purple;
+}
+
+.box-groove {
+    outline: 4px groove orange;
+}
+
+.box-ridge{
+    outline: 4px ridge brown;
+}
+
+.box-inset{
+    outline: 4px inset grey;
+}
+
+.box-outset{
+    outline: 4px outset black;
+}
+
+.box-offset{
+    outline-style: solid;
+    outline-color: tomato;
+    outline-width: 5px;
+    outline-offset: 10px;
+}

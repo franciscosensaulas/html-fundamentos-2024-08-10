@@ -1,0 +1,27 @@
+.marcador-quadrado {
+    list-style-type: square;
+}
+
+.marcador-padrao {
+    list-style-type: disc;
+}
+
+.marcador-circulo {
+    list-style-type: circle;
+}
+
+.sem-marcador {
+    list-style-type: none;
+}
+
+.marcador-decimal {
+    list-style-type: decimal;
+}
+
+.marcador-decimal-zero {
+    list-style-type: decimal-leading-zero;
+}
+
+.marcador-letras-minusculas {
+    list-style-type: lower-alpha;
+}

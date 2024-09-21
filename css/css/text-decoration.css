@@ -1,0 +1,24 @@
+div {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.underline{
+    text-decoration: underline;
+    background-color: #e0f7fa;
+}
+.overline{
+    text-decoration: overline;
+    background-color: #ffccbc;
+}
+.through{
+    text-decoration: line-through;
+    background-color: #c8e6c9;
+}
+.padrao{
+    text-decoration: none;
+    background-color: #fff9c4;
+}
+.underline-overline{
+    text-decoration: underline overline;
+    background-color: #d1c4e9;
+}

@@ -1,0 +1,24 @@
+div{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.no-indent{
+    text-indent: 0;
+    background-color: #e0f7fa;
+}
+
+.indent-20{
+    text-indent: 20px;
+    background-color: #ffe0b2;
+}
+
+.indent-50{
+    text-indent: 50px;
+    background-color: #c8e6c9;
+}
+
+.negative-indent{
+    text-indent: -20px;
+    background-color: #ffcdd2;
+}
