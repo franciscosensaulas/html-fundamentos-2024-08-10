@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exemplo com Javascript</h1>
+
+    <label for="campo-nome">Nome</label>
+    <input type="text" id="campo-nome">
+    <!-- 
+        onclick é um evento que é disparado quando ocorre o clique no elemento, é chamado a função processar
+        onmouseover é um evento que é disparado quando ocorre hover (passar por cima) do elemento, é chamado
+                    a função processarMousePassando
+    -->
+    <button type="button" onclick="processar()" onmouseover="processarMousePassando()">Processar</button>
+
+    <script>
+
+        function processar() {
+            // querySelector retornará a tag que foi encontrada,
+            // caso não encontrar retornará null 
+            let campoNome = document.querySelector("input");
+            // Obter o valor que o usuário preencheu armazenando na variável nome
+            let nome = campoNome.value;
+
+            // Solictar o sobrenome
+            let sobrenome = prompt("Digite o seu sobrenome");
+
+            // Solicitar uma nota de avaliação para o sistema
+            let notaSistema = prompt("De uma para nosso sistema");
+
+            // Enquanto a nota do sistema for menor que 0 ou maior que 10, questionará o usuário
+            while (notaSistema < 0 || notaSistema > 10) {
+                alert("Nota incorreta! Aceitamos notas entre 0 e 10");
+                notaSistema = prompt("Digite uma nota para o nosso sistema");
+            }
+
+            // Apresenta um feedback para o usuário
+            alert("Bem vindo ao sistema " + nome + " " + sobrenome);
+        }
+
+        function processarMousePassando() {
+            // alert("Passou o mouse no botão")
+        }
+    </script>
+</body>
+
+</html>
