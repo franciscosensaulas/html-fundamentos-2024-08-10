@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de jogos</h1>
+    <ul>
+    </ul>
+
+    <div>
+        <label for="campo-nome">Nome</label>
+        <input type="text" id="campo-nome">
+    </div>
+
+    <button onclick="cadastrar()">Cadastrar</button>
+    <input type="file" id="arquivo" accept=".xlsx, .xls" onchange="importar(event)">
+    <button onclick="exportar()">Exportar</button>
+    
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="js/exemplo-crud-jogo.js"></script>
+</body>
+</html>

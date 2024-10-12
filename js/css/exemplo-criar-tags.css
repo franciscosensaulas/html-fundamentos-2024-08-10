@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    color: yellow;
+}
+
+.ocultar-elemento {
+    display: none;
+}
